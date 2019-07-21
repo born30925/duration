@@ -31,3 +31,29 @@ func Test_calculate_hour_startDate_15_06_1996_endDate_21_07_1996_Should_be_20248
 	}
 
 }
+
+func Test_calculate_hour_startDate_03_10_1995_endDate_21_07_1996_Should_be_208632(t *testing.T) {
+
+	expected := 208632
+
+	startDate_temp := "1995-10-03T00:00:00.000Z"
+	endDate_temp := "2019-07-21T00:00:00.000Z"
+
+	layout := "2006-01-02T15:04:05.000Z"
+
+	startDate, err1 := time.Parse(layout, startDate_temp)
+	endDate, err2 := time.Parse(layout, endDate_temp)
+
+	if err1 != nil {
+		fmt.Println(err1)
+	}
+	if err2 != nil {
+		fmt.Println(err2)
+	}
+
+	actual := CalcualteHour(startDate, endDate)
+	if actual != expected {
+		t.Errorf("Expected %d but it got %d", expected, actual)
+	}
+
+}
