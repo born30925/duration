@@ -1,0 +1,309 @@
+{
+	"info": {
+		"_postman_id": "95389e19-bd64-4ff7-ad1c-c3b5aaf6f615",
+		"name": "duration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "startdate 25/11/1995 enddate 20/07/2019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d9468e08-cac6-4897-ac48-eab44d1c079b",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Results Seconds is 746496000\", function () {",
+							"    var resultSecond = pm.response.json();",
+							"    pm.expect(resultSecond.second).to.eql(\"746496000\");",
+							"});",
+							"",
+							"pm.test(\"Results Minutes is 12441600\", function () {",
+							"    var resultMinute = pm.response.json();",
+							"    pm.expect(resultMinute.minute).to.eql(\"12441600\");",
+							"});",
+							"",
+							"pm.test(\"Results Hours is 207360\", function () {",
+							"    var resultHour = pm.response.json();",
+							"    pm.expect(resultHour.hour).to.eql(\"207360\");",
+							"});",
+							"",
+							"pm.test(\"Results Days is 8640\", function () {",
+							"    var resultDay = pm.response.json();",
+							"    pm.expect(resultDay.day).to.eql(\"8640\");",
+							"});",
+							"",
+							"pm.test(\"Results Weeks is 1234 w 2 d\", function () {",
+							"    var resultWeek = pm.response.json();",
+							"    pm.expect(resultWeek.Week).to.eql(\"1234 w 2 d\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/get_date_calculator/25-11-1995/21-07-2019",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"get_date_calculator",
+						"25-11-1995",
+						"21-07-2019"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "startdate 18/06/1995 enddate 21/07/2019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4851c4a5-2680-49b8-879e-df6479404d33",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Results Seconds is 760320000\", function () {",
+							"    var resultSecond = pm.response.json();",
+							"    pm.expect(resultSecond.second).to.eql(\"760320000\");",
+							"});",
+							"",
+							"pm.test(\"Results Minutes is 12672000\", function () {",
+							"    var resultMinute = pm.response.json();",
+							"    pm.expect(resultMinute.minute).to.eql(\"12672000\");",
+							"});",
+							"",
+							"pm.test(\"Results Hours is 216200\", function () {",
+							"    var resultHour = pm.response.json();",
+							"    pm.expect(resultHour.hour).to.eql(\"216200\");",
+							"});",
+							"",
+							"pm.test(\"Results Days is 8800\", function () {",
+							"    var resultDay = pm.response.json();",
+							"    pm.expect(resultDay.day).to.eql(\"8800\");",
+							"});",
+							"",
+							"pm.test(\"Results Weeks is 1257 w 1 d\", function () {",
+							"    var resultWeek = pm.response.json();",
+							"    pm.expect(resultWeek.Week).to.eql(\"1257 w 1 d\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/get_date_calculator/18-06-1995/21-07-2019",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"get_date_calculator",
+						"18-06-1995",
+						"21-07-2019"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "startdate 15/06/1995 enddate 21/07/2019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4329de02-73b2-487b-8337-ec854bbc91eb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Results Seconds is 760579200\", function () {",
+							"    var resultSecond = pm.response.json();",
+							"    pm.expect(resultSecond.second).to.eql(\"760579200\");",
+							"});",
+							"",
+							"pm.test(\"Results Minutes is 12676320\", function () {",
+							"    var resultMinute = pm.response.json();",
+							"    pm.expect(resultMinute.minute).to.eql(\"12676320\");",
+							"});",
+							"",
+							"pm.test(\"Results Hours is 211272\", function () {",
+							"    var resultHour = pm.response.json();",
+							"    pm.expect(resultHour.hour).to.eql(\"211272\");",
+							"});",
+							"",
+							"pm.test(\"Results Days is 8803\", function () {",
+							"    var resultDay = pm.response.json();",
+							"    pm.expect(resultDay.day).to.eql(\"8803\");",
+							"});",
+							"",
+							"pm.test(\"Results Weeks is 1257 w 4 d\", function () {",
+							"    var resultWeek = pm.response.json();",
+							"    pm.expect(resultWeek.Week).to.eql(\"1257 w 4 d\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/get_date_calculator/15-06-1995/21-07-2019",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"get_date_calculator",
+						"15-06-1995",
+						"21-07-2019"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "startdate 17/10/1995 enddate 21/07/2019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e1c71de4-8b0a-4cba-9901-17508c3650b0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Results Seconds is 749865600\", function () {",
+							"    var resultSecond = pm.response.json();",
+							"    pm.expect(resultSecond.second).to.eql(\"749865600\");",
+							"});",
+							"",
+							"pm.test(\"Results Minutes is 12497760\", function () {",
+							"    var resultMinute = pm.response.json();",
+							"    pm.expect(resultMinute.minute).to.eql(\"12497760\");",
+							"});",
+							"",
+							"pm.test(\"Results Hours is 208,296\", function () {",
+							"    var resultHour = pm.response.json();",
+							"    pm.expect(resultHour.hour).to.eql(\"208296\");",
+							"});",
+							"",
+							"pm.test(\"Results Days is 8,679\", function () {",
+							"    var resultDay = pm.response.json();",
+							"    pm.expect(resultDay.day).to.eql(\"8679\");",
+							"});",
+							"",
+							"pm.test(\"Results Weeks is 1,239 w 6 d\", function () {",
+							"    var resultWeek = pm.response.json();",
+							"    pm.expect(resultWeek.Week).to.eql(\"1239 w 6 d\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/get_date_calculator/17-10-1995/21-07-2019",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"get_date_calculator",
+						"17-10-1995",
+						"21-07-2019"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "startdate 03/10/1995 enddate 21/07/2019",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "00596844-1124-4f9f-85c7-40ccd239b323",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Results Seconds is 751,075,200\", function () {",
+							"    var resultSecond = pm.response.json();",
+							"    pm.expect(resultSecond.second).to.eql(\"751075200\");",
+							"});",
+							"",
+							"pm.test(\"Results Minutes is 12,517,920\", function () {",
+							"    var resultMinute = pm.response.json();",
+							"    pm.expect(resultMinute.minute).to.eql(\"12517920\");",
+							"});",
+							"",
+							"pm.test(\"Results Hours is 208,632\", function () {",
+							"    var resultHour = pm.response.json();",
+							"    pm.expect(resultHour.hour).to.eql(\"208632\");",
+							"});",
+							"",
+							"pm.test(\"Results Days is 8,693\", function () {",
+							"    var resultDay = pm.response.json();",
+							"    pm.expect(resultDay.day).to.eql(\"8693\");",
+							"});",
+							"",
+							"pm.test(\"Results Weeks is 1,241 w 6 d\", function () {",
+							"    var resultWeek = pm.response.json();",
+							"    pm.expect(resultWeek.Week).to.eql(\"1241 w 6 d\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/get_date_calculator/03-10-1995/21-07-2019",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"get_date_calculator",
+						"03-10-1995",
+						"21-07-2019"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
