@@ -9,7 +9,7 @@ datecalculate
 ## File Name
 - camelCase ขึ้นต้นด้วยตัวใหญ่ เช่น
 ```
-OrderService.java
+orderService.go
 ```
 
 ## Package Name
