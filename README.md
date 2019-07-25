@@ -18,7 +18,7 @@ orderService.go
 datecalculate
 ```
 ## Function Name
-- ใช้รูปแบบการตั้งชื่อฟังก์ชันเป็นแบบ **Snake_Case** 
+- ใช้รูปแบบการตั้งชื่อฟังก์ชันเป็นแบบ **camelCase** 
 ### กรณีใช้ภายใน package 
 ```
 calculateDate
